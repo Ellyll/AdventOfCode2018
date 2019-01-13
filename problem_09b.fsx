@@ -1,4 +1,5 @@
 open System.Text.RegularExpressions
+// Had to make a seperate module file due to bug in fsi/mono, was core dumping (at least on Ubuntu)
 #load "modules/Cyclic.fsx"
 open Cyclic
 
