@@ -60,8 +60,7 @@ let topLefts =
 
 printfn "Getting max power level..."
 let values, endCache =
-    topLefts    
-    //|> List.map (fun (x,y,size) -> (x,y,size), (powerForSquare x y size grid))
+    topLefts
     |> List.fold (fun (lst, cache) (x,y,size) ->
         let power, newCache = powerForSquare x y size grid cache
         let value = (x,y,size),power
